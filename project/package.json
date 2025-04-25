@@ -1,0 +1,30 @@
+{
+  "name": "pao-no-gato-burguer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^11.0.8",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.8.1",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-router-dom": "^6.22.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.9.1",
+    "sass": "^1.71.1",
+    "vite": "^5.4.2"
+  }
+}
