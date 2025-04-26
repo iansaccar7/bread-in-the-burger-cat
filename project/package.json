@@ -24,6 +24,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.9.1",
+    "gh-pages": "^6.3.0",
     "sass": "^1.71.1",
     "vite": "^5.4.2"
   }
