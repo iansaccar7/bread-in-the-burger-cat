@@ -3,9 +3,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ["lucide-react"],
-  },
   build: {
     rollupOptions: {
       output: {
@@ -21,5 +18,5 @@ export default defineConfig({
     open: true,
     host: true,
   },
-  base: "/bread-in-the-burger-cat/", // Substitua por /nome_do_repositorio ou / para repositórios pessoais
+  base: "/bread-in-the-burger-cat/", // Configuração correta para o nome do repositório
 });
