@@ -18,5 +18,5 @@ export default defineConfig({
     open: true,
     host: true,
   },
-  base: "/bread-in-the-burger-cat/", // Configuração correta para o nome do repositório
+  base: "/", // Configuração correta para o nome do repositório
 });

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, ShoppingCart, Home, UtensilsCrossed, Phone } from 'lucide-react';
-import { useCart } from '../contexts/CartContext';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Menu, ShoppingCart, Home, UtensilsCrossed, Phone } from "lucide-react";
+import { useCart } from "../contexts/CartContext";
+import logo from "../../public/logo.svg";
 
 export function Navbar() {
   const { cart } = useCart();
@@ -11,14 +12,15 @@ export function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img 
-            src="/logo.svg" 
-            alt="Pão no Gato" 
-            className="logo"
-          />
+          <img src={logo} alt="Pão no Gato" className="logo" />
           <span>Pão no Gato Burguer</span>
         </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <Menu color="#FFB800" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -30,13 +32,19 @@ export function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link d-flex align-items-center" to="/cardapio">
+              <Link
+                className="nav-link d-flex align-items-center"
+                to="/cardapio"
+              >
                 <UtensilsCrossed size={18} className="me-1" />
                 Cardápio
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link d-flex align-items-center" to="/contato">
+              <Link
+                className="nav-link d-flex align-items-center"
+                to="/contato"
+              >
                 <Phone size={18} className="me-1" />
                 Contato
               </Link>
@@ -45,9 +53,7 @@ export function Navbar() {
               <Link to="/carrinho" className="nav-link position-relative">
                 <ShoppingCart size={24} />
                 {totalItems > 0 && (
-                  <span className="cart-badge">
-                    {totalItems}
-                  </span>
+                  <span className="cart-badge">{totalItems}</span>
                 )}
               </Link>
             </li>
